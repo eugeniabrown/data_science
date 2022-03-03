@@ -1,2 +1,4 @@
-# data_science
-This is my repository where I learn data science
+## Data Science
+This is my project where I learn data science
+
+# Project_0
