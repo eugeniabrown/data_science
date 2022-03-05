@@ -16,19 +16,19 @@ def random_predict(number: int = 1) -> int:
     """
     
     count = 0 
-    min = 1
-    max = 101
+    min = 1 # начало нашего диапазона
+    max = 101 # конец нашего диапазона
     number = np.random.randint(min, max)
     
     while True:
         count+=1
-        mid = (min+max) // 2
-        if mid > number:
-            max = mid
+        mid = (min+max) // 2 # находим середину диапазона
+        if mid > number: 
+            max = mid # новый конец диапазона
         elif mid < number:
-            min = mid
+            min = mid # новое начало диапазона
         else:
-            break #конец игры выход из цикла
+            break # конец игры мы отгадали число
     return count
         
 
